@@ -1,0 +1,33 @@
+[core]
+	editor = \"c:/Program Files (x86)/GitExtensions/GitExtensions.exe\" fileeditor
+	autocrlf = false
+	symlinks = false
+[user]
+	name = corbob
+	email = corbob@knoxy.ca
+[pull]
+	rebase = false
+[fetch]
+	prune = true
+[rebase]
+	autoStash = false
+[diff]
+	guitool = winmerge
+[difftool "winmerge"]
+	path = C:/Program Files/WinMerge/winmergeu.exe
+	cmd = \"C:/Program Files/WinMerge/winmergeu.exe\" -e -u \"$LOCAL\" \"$REMOTE\"
+[merge]
+	guitool = winmerge
+	ff = false
+	log = true
+[mergetool "winmerge"]
+	path = C:/Program Files/WinMerge/winmergeu.exe
+	cmd = \"C:/Program Files/WinMerge/winmergeu.exe\" -e -u  -wl -wr -fm -dl \"Mine: $LOCAL\" -dm \"Merged: $BASE\" -dr \"Theirs: $REMOTE\" \"$LOCAL\" \"$BASE\" \"$REMOTE\" -o \"$MERGED\"
+[cola]
+	spellcheck = false
+	theme = flat-dark-red
+	icontheme = dark
+	boldheaders = true
+	statusshowtotals = true
+	statusindent = true
+	linebreak = false
